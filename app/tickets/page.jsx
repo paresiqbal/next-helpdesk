@@ -1,6 +1,9 @@
 // Components
 import TicketsList from "./TicketsList";
 
+// React
+import { Suspense } from "react";
+
 export default function tickets() {
   return (
     <main>
@@ -13,7 +16,9 @@ export default function tickets() {
         </div>
       </nav>
 
-      <TicketsList />
+      <Suspense>
+        <TicketsList />
+      </Suspense>
     </main>
   );
 }
