@@ -1,3 +1,5 @@
+// json-server --watch --port 4000 ./_data/db.json
+
 import Link from "next/link";
 
 export default function Home() {
